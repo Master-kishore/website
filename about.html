@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OST</title>
+</head>
+<body>
+    
+    <div class="tools">
+        
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">TOOLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="inventer.html">INVENTER</a></li>
+            </ul>
+      
+            <img src="menu icon/menu.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+<!-------------------------------- About ------------------------------------------------------------>      
+<section class="about-us">
+    <div class="row">
+       
+        <div class="about-col">
+            <h2>OPEN SOURCE TOOL</h2><br>
+            <p>Open-source tools stand in contrast to tools that are commercially licensed and available to users for a fee. Well-known examples of open-source tools include many of the software products from the Apache Foundation, such as big-data tool Hadoop and related tools. Most of these are freely available, with the licensing held by a user community, instead of a company making a profit from software.
+
+                The open-source movement has caused controversy in the IT world for many years. There are different philosophies in play, where open-source proponents believe that tools and software applications should be publicly available. Companies that still license and sell software products have a vested interest in keeping this model going. However, in certain instances, open source has made big inroads in consumer communities.
+                
+                One prominent example is the Mozilla Firefox web browser, which has significant share in consumer use around the world. Rather than being a browser bought by a company, or shipped with that company's hardware, Mozilla Firefox is a free download browser with its own appeal to the user community. In general, open-source tools reveal a history of developers collaborating on system design without any motive for profit.
+                
+                </p>
+                <br>
+           
+        </div>
+        <div class="about-col">
+            <img src="ost image/ost.png">
+        </div>
+
+    </div>
+
+</section>
+
+<!---------------------------- js for toggle menu ---------------------------------------------------> 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OST</title>
+</head>
+<body>
+    
+    <div class="tools">
+        
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">TOOLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="inventer.html">INVENTER</a></li>
+            </ul>
+      
+            <img src="menu icon/menu.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+<!-------------------------------- About ------------------------------------------------------------>      
+<section class="about-us">
+    <div class="row">
+       
+        <div class="about-col">
+            <h2>VLC MEDIA PLAYER</h2><br>
+            <p>VLC media player (previously the VideoLAN Client and commonly known as simply VLC) is a free and open-source, portable, cross-platform media player software and streaming media server developed by the VideoLAN project. VLC is available for desktop operating systems and mobile platforms, such as Android, iOS and iPadOS. VLC is also available on digital distribution platforms such as Apple's App Store, Google Play, and Microsoft Store.
+
+                VLC supports many audio and video compression methods and file formats, including DVD-Video, Video CD and streaming protocols. It is able to stream media over computer networks and can transcode multimedia files.
+                
+                The default distribution of VLC includes many free decoding and encoding libraries, avoiding the need for finding/calibrating proprietary plugins. The libavcodec library from the FFmpeg project provides many of VLC's codecs, but the player mainly uses its own muxers and demuxers. It also has its own protocol implementations. It is available on iOS under the MPLv2.</p>
+                <br>
+            <a href="https://vlc-media-player.en.softonic.com/" class="hero-btn red-btn">DOWNLOAD</a>
+           
+        </div>
+        <div class="about-col">
+            <img src="ost image/VLC_Icon.svg">
+        </div>
+
+    </div>
+
+</section>
+
+<!---------------------------- js for toggle menu ---------------------------------------------------> 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+</body>
+</html>

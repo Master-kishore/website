@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;1,400;1,600&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>OST</title>
+</head>
+<body>
+    
+    <div class="tools">
+        
+        <div class="navbar">
+            <img src="" class="logo">
+            <ul id="MenuItems">
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="home.html">TOOLS</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="inventer.html">INVENTER</a></li>
+            </ul>
+      
+            <img src="menu icon/menu.jpg" class="menu-icon" onclick="menutoggle()">
+        </div>
+<!-------------------------------- About ------------------------------------------------------------>      
+<section class="about-us">
+    <div class="row">
+       
+        <div class="about-col">
+            <h2>MYSQL</h2><br>
+            <p>MySQL is a relational database management system (RDBMS) developed by Oracle that is based on structured query language (SQL).
+
+                A database is a structured collection of data. It may be anything from a simple shopping list to a picture gallery or a place to hold the vast amounts of information in a corporate network. In particular, a relational database is a digital store collecting data and organizing it according to the relational model. In this model, tables consist of rows and columns, and relationships between data elements all follow a strict logical structure. An RDBMS is simply the set of software tools used to actually implement, manage, and query such a database. 
+                
+                MySQL is integral to many of the most popular software stacks for building and maintaining everything from customer-facing web applications to powerful, data-driven B2B services. Its open-source nature, stability, and rich feature set, paired with ongoing development and support from Oracle, have meant that internet-critical organizations such as Facebook, Flickr, Twitter, Wikipedia, and YouTube all employ MySQL backends.</p>
+                <br>
+            <a href="https://downloads.digitaltrends.com/mysql-com/windows" class="hero-btn red-btn">DOWNLOAD</a>
+        </div>
+        <div class="about-col">
+            <img src="ost image/MySQL.png">
+        </div>
+
+    </div>
+
+</section>
+
+<!---------------------------- js for toggle menu ---------------------------------------------------> 
+<script>
+    var MenuItems = document.getElementById("MenuItems");
+
+    MenuItems.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(MenuItems.style.maxHeight == "0px")
+        {
+            MenuItems.style.maxHeight = "200px";
+        }
+        else
+            {
+                MenuItems.style.maxHeight = "0px";
+            }
+    }
+</script>
+
+</body>
+</html>
